@@ -6,12 +6,12 @@ var scoreCounter = 0;
 var highScores = [
   {
     name: "san",
-    score: 3,
+    score: 5,
   },
 
   {
     name: "messi",
-    score: 2,
+    score: 4,
   },
 ];
 
@@ -28,6 +28,14 @@ var questions = [
   {
     question: "In which club is he currntly playing ?? ",
     answer: "manchesterunited",
+  },
+  {
+    question: "He is the Global ambassador of which sports brand ",
+    answer: "nike",
+  },
+  {
+    question: "which is Ronaldo's go to shoes for matches (model name) ",
+    answer: "mercurial",
   },
 ];
 
@@ -70,9 +78,9 @@ function game() {
 function showScores() {
   if (scoreCounter === 0 || scoreCounter === 1) {
     console.log("dont call yourself a ronaldo fan");
-  } else if (scoreCounter === 2) {
+  } else if (scoreCounter === 2 || scoreCounter === 3) {
     console.log("good job");
-  } else if (scoreCounter === 3) {
+  } else if (scoreCounter === 4 || scoreCounter === 5) {
     console.log("you are the goat!! A true ronaldo fan✌️✌️");
     console.log("here are the high scores, do try to beat them");
   }
